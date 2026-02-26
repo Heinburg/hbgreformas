@@ -1,0 +1,333 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* HEADER (AUMENTADO) */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.95);
+  padding: 25px 60px; /* AUMENTADO */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px; /* AUMENTADO */
+  font-weight: bold;
+}
+
+.logo span {
+  color: #e50914;
+}
+
+.menu a {
+  color: #fff;
+  margin-left: 30px; /* AUMENTADO */
+  text-decoration: none;
+  font-size: 18px; /* AUMENTADO */
+}
+
+.menu a:hover {
+  color: #e50914;
+}
+
+/* BANNER */
+.banner {
+  height: 100vh;
+  background: url("../img/obra.jpeg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 900px;
+}
+
+.banner h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+
+/* BOTÃO */
+.btn {
+  background: #e50914;
+  color: #fff;
+  padding: 18px 50px; /* AUMENTADO */
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff1f2d;
+  transform: scale(1.05);
+}
+
+/* SERVIÇOS */
+.servicos {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.servicos-sub {
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #111;
+  padding: 35px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid #222;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #e50914;
+  background: #151515;
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* OBRAS */
+.obras {
+  padding: 90px 40px;
+  background: #080808;
+  text-align: center;
+}
+
+.obras h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.obras p {
+  color: #bbb;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+}
+
+/* FORMULÁRIOS (AUMENTADOS) */
+.formularios {
+  padding: 140px 40px; /* MAIS PRESENÇA */
+  max-width: 1000px;   /* MAIS LARGO */
+  margin: auto;
+}
+
+.form-servico {
+  display: none;
+  background: #111;
+  padding: 60px; /* AUMENTADO */
+  border-radius: 25px;
+  border: 1px solid #222;
+  margin-top: 60px;
+}
+
+.form-servico h3 {
+  margin-bottom: 40px;
+  color: #e50914;
+  text-align: center;
+  font-size: 26px; /* AUMENTADO */
+}
+
+.form-servico input,
+.form-servico select,
+.form-servico textarea {
+  width: 100%;
+  padding: 18px; /* AUMENTADO */
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.form-servico input:focus,
+.form-servico select:focus,
+.form-servico textarea:focus {
+  border-color: #e50914;
+  outline: none;
+  box-shadow: 0 0 12px rgba(229,9,20,0.5);
+}
+
+.form-servico label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* WHATSAPP FIXO */
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #11903f;
+  color: white;
+  padding: 18px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  z-index: 999;
+  font-size: 16px;
+}
+
+/* CARROSSEL (MAIOR E MAIS IMPACTANTE) */
+.carousel-container {
+  position: relative;
+  margin-top: 80px; /* MAIS ESPAÇO */
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 35px; /* AUMENTADO */
+  padding: 20px 120px; /* MAIS LARGO */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  position: relative;
+  min-width: 420px; /* AUMENTADO */
+}
+
+.carousel img {
+  width: 100%;
+  height: 320px; /* AUMENTADO */
+  object-fit: cover;
+  border-radius: 18px;
+  transition: 0.4s;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.carousel img:hover {
+  transform: scale(1.08);
+}
+
+.tag {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  letter-spacing: 1px;
+}
+
+.antes {
+  background: #444;
+  color: #fff;
+}
+
+.depois {
+  background: #e50914;
+  color: #fff;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  border: none;
+  font-size: 32px;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+  background: #e50914;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 34px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .carousel {
+    padding: 10px 20px;
+  }
+
+  .item {
+    min-width: 280px;
+  }
+
+  .carousel img {
+    height: 220px;
+  }
+
+  .formularios {
+    padding: 80px 20px;
+  }
+
+  .form-servico {
+    padding: 30px;
+  }
+}

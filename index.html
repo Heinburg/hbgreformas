@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+ <title>Pintor em Porto Alegre | HBG Reformas</title>
+ <meta name="description" content="Pintor em Porto Alegre com mais de 10 anos de experiência. Trabalhamos com pintura, porcelanato e reformas em geral. Orçamento gratuito.">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">HBG <span>Reformas</span></div>
+  <nav class="menu">
+    <a href="#inicio">Início</a>
+    <a href="#escolher-servico">Serviços</a>
+    <a href="#obras">Obras</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<!-- BANNER -->
+<section class="banner" id="inicio">
+  <div class="banner-overlay"></div>
+
+  <div class="banner-content">
+    <h1>Reforma e Pintura Profissional em Porto Alegre com Orçamento Rápido</h1>
+    <p>Mais de 10 anos entregando qualidade, prazo e confiança</p>
+    <a href="#escolher-servico" class="btn">Solicitar Orçamento</a>
+  </div>
+</section>
+
+<!-- ESCOLHA DO SERVIÇO -->
+<section class="servicos" id="escolher-servico">
+  <h2>Escolha um serviço para solicitar orçamento</h2>
+  <p class="servicos-sub">
+    Clique no serviço desejado e preencha as informações para receber seu orçamento
+  </p>
+
+  <div class="cards">
+    <div class="card" data-servico="pintura">🎨 Pintura</div>
+    <div class="card" data-servico="porcelanato">⬜ Porcelanato</div>
+    <div class="card" data-servico="reboco">🧱 Reboco</div>
+    <div class="card" data-servico="construcao">🏗️ Construção Civil</div>
+    <div class="card" data-servico="reformas">🔨 Reformas</div>
+    <div class="card" data-servico="eletrica">⚡ Elétrica</div>
+    <div class="card" data-servico="cameras">📷 Câmeras e Som</div>
+    <div class="card" data-servico="jardinagem">🌿 Jardinagem</div>
+  </div>
+</section>
+
+<!-- FORMULÁRIOS -->
+<section class="formularios">
+
+<!-- PINTURA -->
+<form class="form-servico" id="form-pintura">
+<h3>Orçamento - Pintura</h3>
+
+<input type="text" name="Nome" placeholder="Nome completo" required>
+<input type="tel" name="Telefone" placeholder="Telefone / WhatsApp" required>
+<input type="text" name="Endereço" placeholder="Endereço da obra" required>
+<input type="number" name="Metragem" placeholder="Metragem aproximada (m²)" required>
+
+<label>Tipo de pintura:</label>
+<label><input type="checkbox" name="Tipo" value="Interna"> Interna</label>
+<label><input type="checkbox" name="Tipo" value="Externa"> Externa</label>
+
+<select name="Urgência" required>
+<option value="">Urgência</option>
+<option>Imediata</option>
+<option>Próximos 15 dias</option>
+<option>Próximo mês</option>
+</select>
+
+<select name="Material" required>
+<option value="">Já possui material?</option>
+<option>Sim</option>
+<option>Não</option>
+</select>
+
+<textarea name="Descrição" placeholder="Descreva o serviço"></textarea>
+
+<button type="submit" class="btn">Solicitar Orçamento</button>
+</form>
+
+<!-- PORCELANATO -->
+<form class="form-servico" id="form-porcelanato">
+<h3>Orçamento - Porcelanato</h3>
+
+<input type="text" name="Nome" required placeholder="Nome completo">
+<input type="tel" name="Telefone" required placeholder="Telefone">
+<input type="number" name="Metragem" required placeholder="Metragem aproximada (m²)">
+
+<select name="Urgência" required>
+<option value="">Urgência</option>
+<option>Imediata</option>
+<option>Próximos 15 dias</option>
+<option>Próximo mês</option>
+</select>
+
+<select name="Ambiente" required>
+<option value="">Tipo de ambiente</option>
+<option>Sala</option>
+<option>Cozinha</option>
+<option>Área externa</option>
+<option>Banheiro</option>
+</select>
+
+<label><input type="checkbox" name="Aplicação" value="Parede"> Parede</label>
+<label><input type="checkbox" name="Aplicação" value="Chão"> Chão</label>
+
+<select name="Material" required>
+<option value="">Já possui material?</option>
+<option>Sim</option>
+<option>Não</option>
+</select>
+
+<textarea name="Descrição" placeholder="Descreva o serviço"></textarea>
+
+<button type="submit" class="btn">Solicitar Orçamento</button>
+</form>
+
+<!-- REBOCO -->
+<form class="form-servico" id="form-reboco">
+<h3>Orçamento - Reboco</h3>
+
+<input type="text" name="Nome" required placeholder="Nome completo">
+<input type="tel" name="Telefone" required placeholder="Telefone">
+<input type="number" name="Metragem" required placeholder="Metragem aproximada (m²)">
+
+<select name="Urgência" required>
+<option value="">Urgência</option>
+<option>Imediata</option>
+<option>Próximos 15 dias</option>
+<option>Próximo mês</option>
+</select>
+
+<select name="Ambiente" required>
+<option value="">Tipo de ambiente</option>
+<option>Sala</option>
+<option>Cozinha</option>
+<option>Área externa</option>
+<option>Banheiro</option>
+</select>
+
+<select name="Material" required>
+<option value="">Já possui material?</option>
+<option>Sim</option>
+<option>Não</option>
+</select>
+
+<textarea name="Descrição" placeholder="Descreva o serviço"></textarea>
+
+<button type="submit" class="btn">Solicitar Orçamento</button>
+</form>
+
+<!-- CONSTRUÇÃO CIVIL -->
+<form class="form-servico" id="form-construcao">
+<h3>Orçamento - Construção Civil</h3>
+
+<input type="text" name="Nome" required placeholder="Nome completo">
+<input type="tel" name="Telefone" required placeholder="Telefone">
+<input type="number" name="Metragem" required placeholder="Metragem aproximada (m²)">
+
+<select name="Urgência" required>
+<option value="">Urgência</option>
+<option>Imediata</option>
+<option>Próximos 15 dias</option>
+<option>Próximo mês</option>
+</select>
+
+<select name="Material" required>
+<option value="">Já possui material?</option>
+<option>Sim</option>
+<option>Não</option>
+</select>
+
+<textarea name="Descrição" placeholder="Descreva o serviço"></textarea>
+
+<button type="submit" class="btn">Solicitar Orçamento</button>
+</form>
+
+<!-- REFORMAS -->
+<form class="form-servico" id="form-reformas">
+<h3>Orçamento - Reformas</h3>
+
+<input type="text" name="Nome" required placeholder="Nome completo">
+<input type="tel" name="Telefone" required placeholder="Telefone">
+<input type="number" name="Metragem" required placeholder="Metragem aproximada (m²)">
+
+<select name="Urgência" required>
+<option value="">Urgência</option>
+<option>Imediata</option>
+<option>Próximos 15 dias</option>
+<option>Próximo mês</option>
+</select>
+
+<select name="Ambiente" required>
+<option value="">Tipo de ambiente</option>
+<option>Sala</option>
+<option>Cozinha</option>
+<option>Área externa</option>
+<option>Banheiro</option>
+</select>
+
+<select name="Material" required>
+<option value="">Já possui material?</option>
+<option>Sim</option>
+<option>Não</option>
+</select>
+
+<textarea name="Descrição" placeholder="Descreva o serviço"></textarea>
+
+<button type="submit" class="btn">Solicitar Orçamento</button>
+</form>
+
+<!-- ELÉTRICA -->
+<form class="form-servico" id="form-eletrica">
+<h3>Orçamento - Elétrica</h3>
+
+<input type="text" name="Nome" required placeholder="Nome completo">
+<input type="tel" name="Telefone" required placeholder="Telefone">
+
+<select name="Urgência" required>
+<option value="">Urgência</option>
+<option>Imediata</option>
+<option>Próximos 15 dias</option>
+<option>Próximo mês</option>
+</select>
+
+<select name="Ambiente" required>
+<option value="">Tipo de ambiente</option>
+<option>Sala</option>
+<option>Cozinha</option>
+<option>Área externa</option>
+<option>Banheiro</option>
+<option>Nenhuma</option>
+</select>
+
+<select name="Material" required>
+<option value="">Já possui material?</option>
+<option>Sim</option>
+<option>Não</option>
+</select>
+
+<textarea name="Descrição" placeholder="Descreva o serviço"></textarea>
+
+<button type="submit" class="btn">Solicitar Orçamento</button>
+</form>
+
+<!-- CAMERAS -->
+<form class="form-servico" id="form-cameras">
+<h3>Orçamento - Câmeras e Som</h3>
+
+<input type="text" name="Nome" required placeholder="Nome completo">
+<input type="tel" name="Telefone" required placeholder="Telefone">
+<input type="text" name="Endereço" required placeholder="Endereço">
+
+<select name="Urgência" required>
+<option value="">Urgência</option>
+<option>Imediata</option>
+<option>Próximos 15 dias</option>
+<option>Próximo mês</option>
+</select>
+
+<select name="Ambiente" required>
+<option value="">Tipo de ambiente</option>
+<option>Sala</option>
+<option>Cozinha</option>
+<option>Área externa</option>
+<option>Loja</option>
+<option>Nenhuma</option>
+</select>
+
+<select name="Material" required>
+<option value="">Já possui material?</option>
+<option>Sim</option>
+<option>Não</option>
+</select>
+
+<textarea name="Descrição" placeholder="Descreva o serviço"></textarea>
+
+<button type="submit" class="btn">Solicitar Orçamento</button>
+</form>
+
+<!-- JARDINAGEM -->
+<form class="form-servico" id="form-jardinagem">
+<h3>Orçamento - Jardinagem</h3>
+
+<input type="text" name="Nome" required placeholder="Nome completo">
+<input type="tel" name="Telefone" required placeholder="Telefone">
+<input type="text" name="Endereço" required placeholder="Endereço">
+
+<select name="Urgência" required>
+<option value="">Urgência</option>
+<option>Imediata</option>
+<option>Próximos 15 dias</option>
+<option>Próximo mês</option>
+</select>
+
+<select name="Material" required>
+<option value="">Já possui material?</option>
+<option>Sim</option>
+<option>Não</option>
+</select>
+
+<textarea name="Descrição" placeholder="Descreva o serviço"></textarea>
+
+<button type="submit" class="btn">Solicitar Orçamento</button>
+</form>
+
+</section>
+
+<!-- OBRAS -->
+<section class="obras" id="obras">
+  <h2>Antes e Depois - Pintura Profissional em Porto Alegre</h2>
+
+  <div class="carousel-container">
+    <button class="prev">&#10094;</button>
+
+    <div class="carousel">
+
+      <!-- PAR 1 -->
+      <div class="item">
+        <span class="tag antes">ANTES</span>
+        <img src="img/antes1.jpeg" alt="Antes da pintura residencial em Porto Alegre">
+      </div>
+
+      <div class="item">
+        <span class="tag depois">DEPOIS</span>
+        <img src="img/depois1.jpeg" alt="Depois da pintura profissional em Porto Alegre">
+      </div>
+
+      <!-- PAR 2 -->
+      <div class="item">
+        <span class="tag antes">ANTES</span>
+        <img src="img/antes2.jpeg" alt="Parede antes da reforma em Porto Alegre">
+      </div>
+
+      <div class="item">
+        <span class="tag depois">DEPOIS</span>
+        <img src="img/depois2.jpeg" alt="Parede após pintura finalizada">
+      </div>
+
+      <!-- PAR 3 -->
+      <div class="item">
+        <span class="tag antes">ANTES</span>
+        <img src="img/antes3.jpeg" alt="Ambiente antes da pintura">
+      </div>
+
+      <div class="item">
+        <span class="tag depois">DEPOIS</span>
+        <img src="img/depois3.jpeg" alt="Ambiente após pintura profissional">
+      </div>
+
+      <!-- PAR 4 -->
+      <div class="item">
+        <span class="tag antes">ANTES</span>
+        <img src="img/antes4.jpeg" alt="Corredor antes da pintura">
+      </div>
+
+      <div class="item">
+        <span class="tag depois">DEPOIS</span>
+        <img src="img/depois4.jpeg" alt="Corredor após pintura finalizada em Porto Alegre">
+      </div>
+
+    </div>
+
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contato">
+  <p>© 2026 HBG Reformas - Todos os direitos reservados</p>
+  <p>Contato: (51) 99197-2451 | hbgreformas@gmail.com</p>
+</footer>
+
+<script src="js/script.js"></script>
+<a href="https://wa.me/5551991972451" class="whatsapp-fixo" target="_blank">
+  💬 Falar no WhatsApp
+</a>
+</body>
+</html>
