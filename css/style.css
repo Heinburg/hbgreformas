@@ -318,7 +318,9 @@ body {
   }
 
   .menu {
-    display: none;
+  display: flex;
+  gap: 15px;
+
   }
 
   /* BANNER */
