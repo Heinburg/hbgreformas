@@ -301,78 +301,131 @@ body {
   background: #e50914;
 }
 
-/* RESPONSIVO */
+/* ================= RESPONSIVO PROFISSIONAL ================= */
 @media (max-width: 768px) {
-  .banner h1 {
-    font-size: 34px;
+
+  body {
+    padding-top: 80px;
+  }
+
+  /* HEADER */
+  .header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
   }
 
   .menu {
     display: none;
   }
 
-  .carousel {
-    padding: 10px 20px;
+  /* BANNER */
+  .banner {
+    height: 85vh;
   }
 
-  .item {
-    min-width: 280px;
-  }
-
-  .carousel img {
-    height: 220px;
-  }
-
-  .formularios {
-    padding: 80px 20px;
-  }
-
-  .form-servico {
-    padding: 30px;
-  }
-}/* ===== RESPONSIVO CELULAR ===== */
-@media (max-width: 768px) {
-
-  body {
+  .banner-content {
     padding: 0 15px;
   }
 
-  .header {
-    padding: 15px;
+  .banner h1 {
+    font-size: 30px;
+    line-height: 1.2;
   }
 
-  .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  .banner p {
+    font-size: 15px;
+    margin-bottom: 25px;
   }
 
-  .hero {
-    padding: 40px 20px;
-    text-align: center;
+  .btn {
+    padding: 14px 28px;
+    font-size: 15px;
   }
 
-  .hero h1 {
+  /* SERVIÇOS */
+  .servicos {
+    padding: 70px 20px;
+  }
+
+  .servicos h2 {
     font-size: 28px;
   }
 
-  .hero p {
+  .servicos-sub {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .card {
+    padding: 25px 15px;
     font-size: 16px;
   }
 
-  .section {
-    padding: 40px 20px;
+  /* OBRAS */
+  .obras {
+    padding: 70px 20px;
   }
 
-  .grid {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  .obras h2 {
+    font-size: 26px;
   }
 
-  img {
-    width: 100%;
-    height: auto;
+  .obras p {
+    font-size: 14px;
+  }
+
+  /* CARROSSEL */
+  .carousel {
+    padding: 10px 15px;
+    gap: 15px;
+  }
+
+  .item {
+    min-width: 240px;
+  }
+
+  .carousel img {
+    height: 180px;
+  }
+
+  .prev, .next {
+    font-size: 22px;
+    padding: 8px 12px;
+  }
+
+  /* FORMULÁRIOS */
+  .formularios {
+    padding: 70px 20px;
+  }
+
+  .form-servico {
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .form-servico h3 {
+    font-size: 20px;
+  }
+
+  .form-servico input,
+  .form-servico select,
+  .form-servico textarea {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  /* WHATSAPP */
+  .whatsapp-fixo {
+    padding: 12px 18px;
+    font-size: 14px;
   }
 
 }
