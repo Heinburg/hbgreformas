@@ -330,4 +330,49 @@ body {
   .form-servico {
     padding: 30px;
   }
+}/* ===== RESPONSIVO CELULAR ===== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0 15px;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
 }
