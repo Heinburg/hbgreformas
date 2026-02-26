@@ -319,7 +319,9 @@ body {
 
   .menu {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
 
   }
 
